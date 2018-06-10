@@ -20,11 +20,15 @@ extra-source-files:
 description:         Please see the README on GitHub at <https://github.com/githubuser/template-hspec#readme>
 
 dependencies:
-- base >= 4.7 && < 5
+- base >= 4.6 && < 5
+- template-haskell
 - hspec
+- parsec
 
 library:
   source-dirs: src
+  exposed-modules:
+  - TemplateHspec
 
 executables:
   template-hspec-exe:
