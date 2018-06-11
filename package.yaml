@@ -24,17 +24,20 @@ dependencies:
 - template-haskell
 - hspec
 - parsec
+- haskell-src-meta
+- text
 
 library:
   source-dirs: src
   exposed-modules:
-  - TemplateHspec
+  - TemplateHspec  
 
 executables:
   template-hspec-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
+    - -Wall
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
